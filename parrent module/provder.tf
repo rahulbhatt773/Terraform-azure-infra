@@ -6,14 +6,14 @@ terraform {
     }
   }
   backend "azurerm" {
-    resource_group_name = "rahul_rg"
+    resource_group_name  = "rahul_rg"
     storage_account_name = "rahulsto"
-    container_name = "rahulblob"    
-    key = "rahul.tfstate"
+    container_name       = "rahulblob"
+    key                  = "rahul.tfstate"
   }
 }
 
 provider "azurerm" {
-features {}
-  
+  features {}
+
 }
